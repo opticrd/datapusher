@@ -54,8 +54,6 @@ RUN apk del .build-deps && \
 ############
 FROM alpine:3.13 as main
 
-LABEL maintainer="Keitaro Inc <info@keitaro.com>"
-
 ENV APP_DIR=/usr/lib/ckan/datapusher
 ENV WSGI_FILE ${APP_DIR}/src/datapusher/deployment/datapusher.wsgi
 ENV WSGI_CONFIG ${APP_DIR}/datapusher-uwsgi.ini
