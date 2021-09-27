@@ -13,8 +13,8 @@ on:
 
 env:
   # Registry variables
-  HUB_BASE: gobdo
-  GIT_BASE: ghcr.io/opticrd
+  HUB_BASE: ckan
+  GIT_BASE: ghcr.io/ckan
 
 jobs:
   build:
