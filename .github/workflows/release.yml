@@ -73,8 +73,6 @@ jobs:
             ${{ env.GIT_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:latest
             ${{ env.HUB_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:${{ needs.versioning.outputs.version }}
             ${{ env.HUB_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:latest
-          build-args: |
-            SRC_DIR=/srv/app/src
           push: true
           cache-from: type=registry,ref=${{ env.GIT_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:latest
           cache-to: type=inline
